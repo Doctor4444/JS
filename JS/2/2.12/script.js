@@ -13,17 +13,19 @@ while(b<3)
 	b++
 }
 
+// Использование метки
 outer:
 for (let i = 0; i < 3; i++) {
 
   for (let j = 0; j < 3; j++) 
   {
-    let input = prompt(`Znachenie na koordinatax (${i},${j})`, '')
+    let input = prompt(`Значение на координатах (${i},${j})`, '')
 	if (!input) break outer
   }
 }
-console.log('Success!');
+console.log('Success!'); 
 
+// Вывод простых чисел от 2 до n
 let c = 2
 let n = 10
 let d = 2
@@ -38,7 +40,9 @@ for (c=2; c<=n; c++)
 	console.log(c)
 }
 
-
-
-
-
+// Повторять цикл, пока ввод неверен
+let number
+do
+{
+	number = prompt("Введите число больше 100")
+} while (number <= 100 && number)
